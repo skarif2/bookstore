@@ -1,0 +1,15 @@
+.showbooks{
+	margin-top: 50px;
+}
+.showbooks div{
+	margin-top: 20px;
+	margin-bottom: 30px;
+	font-size: 15px;
+}
+img{
+	height: 280px;
+	width: 160px;
+}
+.delete_button{
+	margin-top: 10px;
+}
