@@ -37,44 +37,41 @@
 		  </div><!-- /.container-fluid -->
 		</nav>
 
-		<section>
-			<div class="container">
-				<div id="books">
-					<form id="addBook" action="#" method="post">
-						<div class="form-group col-xs-12">
-							<label for="coverImage">Cover Image: </label>
-							<input id="coverImage" type="file" />
-						</div>
+		<section class="container">
+			<div id="books">
+				<form id="addBook" action="#">
+					<div class="form-group col-xs-12">
+						<label for="coverImage">Cover Image: </label>
+						<input id="coverImage" type="file" />
+					</div>
 
-						<div class="form-group col-xs-12 col-md-6">
-							<label class="sr-only" for="title">Title: </label>
-							<input id="title" class="form-control" type="text" placeholder="Title" />
-						</div>
+					<div class="form-group col-xs-12 col-md-6">
+						<label class="sr-only" for="title">Title: </label>
+						<input id="title" class="form-control" type="text" placeholder="Title" />
+					</div>
 
-						<div class="form-group col-xs-12 col-md-6">
-							<label class="sr-only" for="author">Author: </label>
-							<input id="author" class="form-control" type="text" placeholder="Author" />
-						</div>
+					<div class="form-group col-xs-12 col-md-6">
+						<label class="sr-only" for="author">Author: </label>
+						<input id="author" class="form-control" type="text" placeholder="Author" />
+					</div>
 
-						<div class="form-group col-xs-12 col-md-6">
-							<label class="sr-only" for="releaseDate">Release Date: </label>
-							<input id="releaseDate" class="form-control" type="text" placeholder="Release Date" />
-						</div>
+					<div class="form-group col-xs-12 col-md-6">
+						<label class="sr-only" for="releaseDate">Release Date: </label>
+						<input id="releaseDate" class="form-control" type="text" placeholder="Release Date" />
+					</div>
 
-						<div class="form-group col-xs-12 col-md-6">
-							<label class="sr-only" for="keywords">Keywords: </label>
-							<input id="keywords" class="form-control" type="text" placeholder="Keywords" />
-						</div>
-						<div class="col-xs-12">
-							<button type="submit" class="btn btn-success col-xs-3 pull-right">Add</button>
-						</div>
-
-					</form>
-				</div>
+					<div class="form-group col-xs-12 col-md-6">
+						<label class="sr-only" for="keywords">Keywords: </label>
+						<input id="keywords" class="form-control" type="text" placeholder="Keywords" />
+					</div>
+					<div class="col-xs-12">
+						<button id="add" class="btn btn-success col-xs-3 pull-right addButton">Add</button>
+					</div>
+				</form>
 			</div>
 		</section>
 
-		<section id = "showbooks" class="container">
+<!--		<section id = "showbooks" class="container">
 			<div class="bookContainer col-xs-6 col-md-4">
 				<img src="img/placeholder.png" class="img-responsive img-rounded" alt="" />
 				<ul>
@@ -83,20 +80,19 @@
 					<li>Release Date</li>
 					<li>KeyWords</li>
 				</ul>
-				<button type="button" name="button" class="btn btn-danger pull-right delete_button">Delete</button>
+				<button class="btn btn-danger pull-right delete">Delete</button>
 			</div>
-
-		</section>
+		</section> -->
 
 		<script id="bookTemplate" type="text/template">
-			<img src='<%= coverImage %>' class="img-responsive img-rounded"/>
-			<ul>
-				<li><%= title %></li>
-				<li><%= author %></li>
-				<li><%= releaseDate %></li>
-				<li><%= keywords %></li>
-			</ul>
-			<button class="btn btn-danger pull-right delete_button">Delete</button>
+				<img src='<%= coverImage %>' class="img-responsive img-rounded"/>
+				<ul>
+					<li><%= title %></li>
+					<li><%= author %></li>
+					<li><%= releaseDate %></li>
+					<li><%= keywords %></li>
+				</ul>
+				<button class="btn btn-danger pull-right delete">Delete</button>
 		</script>
 
 		<script src="bower_components/jquery/dist/jquery.js"></script>

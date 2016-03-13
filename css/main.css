@@ -1,15 +1,6 @@
 body{
 	background-color: #eee;
 }
-#showbooks{
-	margin-top: 50px;
-
-}
-#showbooks div{
-	margin-top: 20px;
-	margin-bottom: 30px;
-	font-size: 15px;
-}
 .bookContainer{
 	outline: 1px solid #aaa;
 	background-color: #fff;
@@ -25,7 +16,10 @@ body{
 	margin-top: 10px;
 	margin-bottom: 0;
 }
-.delete_button{
+.delete{
 	margin-top: 5px;
 	margin-bottom: 10px;
+}
+.addButton{
+	margin-bottom: 20px;
 }
